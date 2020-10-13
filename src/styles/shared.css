@@ -1,0 +1,47 @@
+/* Fonts ==>> Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* Fonts ==>> Source Code Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+
+/* Fonts ==>> Cousine (monospace) */
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+
+/* Earthrise style guide */
+@import './style-guide.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  /* border: tomato solid 1px; */
+}
+
+body > * {
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: var(--off-black);
+  color: var(--pure-white);
+}
+
+.header__logo {
+  font-family: 'Cousine', monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.header__link {
+  text-transform: capitalize;
+}
+
+.header__nav {
+  display: none;
+}

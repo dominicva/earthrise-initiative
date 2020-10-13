@@ -1,0 +1,17 @@
+{
+  "name": "earthrise-initiative",
+  "version": "1.0.0",
+  "description": "Repository for the earthrise initiative website",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Dominic van Almsick",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  }
+}

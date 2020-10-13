@@ -1,0 +1,59 @@
+#hero {
+  height: 70vh;
+  background-image: url('../media/earthrise-hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% center;
+  background-color: var(--off-black);
+  display: flex;
+  align-items: center;
+}
+
+#mission {
+  background-color: var(--off-black);
+}
+
+#mission-statement {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  margin: 3rem 0;
+  color: var(--pure-white);
+}
+
+.mission__nav-items {
+  display: flex;
+  color: var(--turqoise);
+}
+
+.mission__nav-item__container {
+  padding: 0.5rem;
+}
+
+.mission__nav-items a {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.8px;
+}
+
+.mission__nav__nav-arrow {
+  opacity: 0;
+}
+
+.mission__nav__nav-arrow:hover {
+  opacity: 1;
+}
+
+
+#areas-preview {
+  padding-top: 3rem;
+  background-color: var(--off-white);
+}
+
+#areas-question {
+  margin: 0.5rem 0;
+}
