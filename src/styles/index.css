@@ -43,10 +43,10 @@
   justify-items: center;
   text-align: center;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 500;
   line-height: 1.2rem;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
 }
 
 .mission__nav__nav-arrow {
@@ -62,15 +62,19 @@
   #mission-statement {
     font-size: 2.5rem;
     letter-spacing: 1.5px;
-    line-height: 3.75rem;
+    line-height: 3.25rem;
     max-width: 40rem;
     margin: 4rem auto;
+  }
+
+  .mission__nav-items a {
+    font-size: 0.8rem;
   }
 }
 
 #areas-preview {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
   background-color: var(--off-white);
 }
 
@@ -82,13 +86,14 @@
 
 #areas-question {
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  /* max-width: 35rem; */
+  margin-bottom: 2.75rem;
 }
 
 #explore-projects__btn {
   display: flex;
   align-items: center;
+  width: fit-content;
+
 }
 
 #explore-projects__btn__nav-arrow {
@@ -97,4 +102,8 @@
   border: 1px solid var(--off-black);
   padding: 0.25rem;
   margin-right: 1rem;
+}
+
+#explore-projects__btn__text {
+  letter-spacing: 0.5px;
 }
