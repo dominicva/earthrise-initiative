@@ -12,6 +12,9 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 75rem;
+  margin: auto;
+  background-color: var(--off-black);
 }
 
 * {
@@ -20,6 +23,7 @@ html {
 
 body > * {
   padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 header {
@@ -27,15 +31,31 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: var(--off-black);
   color: var(--pure-white);
 }
 
 .header__logo {
+  max-width: 50%;
   font-family: 'Cousine', monospace;
   font-size: 0.85rem;
+  letter-spacing: 2px;
+  line-height: 1.35rem;
   text-transform: uppercase;
   color: inherit;
+}
+
+@media (min-width: 35rem) {
+  header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .header__logo {
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
 }
 
 .header__link {

@@ -6,6 +6,7 @@
     <title>Education – Earthrise</title>
     <link rel="stylesheet" href="../../styles/resets.css" />
     <link rel="stylesheet" href="../../styles/shared.css" />
+    <link rel="stylesheet" href="../../styles/areas.css" />
   </head>
   <body>
     <header>
@@ -23,67 +24,64 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <a href="">projects / education</a>
+    <section id="quote__section">
+      <a id="breadcrumbs" href="">projects / education</a>
       <q>Why can't one million students a year attend Harvard?</q>
-      <p>– Marc Andreessen</p>
+      <p id="quote__attribution">– Marc Andreessen</p>
     </section>
     <main>
-      <section>
-        <h1>the education problem</h1>
-        <p>
+      <section id="area-intro">
+        <h1 id="area-intro__heading">the education problem</h1>
+        <!-- <p>
           Education is a large and nuanced field. Yet the quote above, taken
           from It’s Time to Build by Marc Andreessen, contains the essence of
           the challenge: quality and scale.
-        </p>
-        <div>
+        </p> -->
+        <div class="area-intro__concept1">
           <h4>quality</h4>
           <p>
-            More knowledge than Newton or Galileo could have dreamed of is
-            accesible via the internet-connected devices in our pockets. We
+            We carry a large portion of humanity's knowldge in our pockets. We
             support projects that help unlock this potential.
           </p>
         </div>
-        <div>
+        <div class="area-intro__concept2">
           <h4>scale</h4>
           <p>
             “We have top-end universities with the capacity to teach only a
             microscopic percentage of the 120 million new 18-year-olds in the
             world each year. Why not educate every 18-year-old? Isn’t that the
-            most important thing we can possibly do?” Andreessen again. We
-            couldn’t put it better. We support projects that aim to massively
-            scale access to high-quality learning.
+            most important thing we can possibly do?” Andreessen again.
           </p>
         </div>
       </section>
-      <section>
+      <section id="area-projects">
         <h1>projects we support</h1>
-        <div id="projects-container">
-          <div id="khan-academy-preview" class="project-preview">
-            <img src="" alt="" />
+        <!-- <div id="projects-container"> -->
+          <a href="https://www.khanacademy.org" target="_blank" id="khan-academy-preview" class="project-preview">
+            <img class="project__image" src="../../media/khan-academy-logo.svg" alt="Khan Academy logo" />
             <h3>Khan Academy</h3>
             <p>
               A nonprofit with the mission to provide a free, world-class
               education for anyone, anywhere.
             </p>
-          </div>
-          <div id="real-school-preview" class="project-preview">
-            <img src="" alt="" />
+          </a>
+          <a href="https://www.realschool.eu" target="_blank" id="real-school-preview" class="project-preview">
+            <img class="project__image" src="../../media/real-school.webp" alt="Real School" />
             <h3>Real School</h3>
             <p>
               A not-for-profit international school that educates for
               sustainability through project-based learning.
             </p>
-          </div>
-          <div id="freecodecamp-preview" class="project-preview">
-            <img src="" alt="" />
+          </a>
+          <a href="https://www.freecodecamp.org" target="_blank" id="freecodecamp-preview" class="project-preview">
+            <img class="project__image" src="../../media/freecodecamp-vector-logo.svg" alt="freeCodeCamp logo" />
             <h3>freeCodeCamp</h3>
             <p>
               freeCodeCamp is a nonprofit community that helps you learn to code
               by building projects.
             </p>
-          </div>
-        </div>
+          </a>
+        <!-- </div> -->
       </section>
     </main>
   </body>
