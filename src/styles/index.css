@@ -62,8 +62,8 @@
   #mission-statement {
     font-size: 2.5rem;
     letter-spacing: 1.5px;
-    line-height: 3.25rem;
-    max-width: 40rem;
+    line-height: 4.25rem;
+    max-width: 50rem;
     margin: 4rem auto;
   }
 
@@ -93,7 +93,6 @@
   display: flex;
   align-items: center;
   width: fit-content;
-
 }
 
 #explore-projects__btn__nav-arrow {
