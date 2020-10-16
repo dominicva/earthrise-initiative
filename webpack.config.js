@@ -7,14 +7,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 /* eslint-disable no-undef */
 module.exports = {
   mode: 'development',
-  entry: './src/js/index.js',
-  // entry: {
-  //   welcome: './src/home-page/home.js',
-  //   about: './src/education-page/education.js',
-  // },
+  entry: {
+    homePage: './src/js/index.js',
+    education: './src/js/project-areas/education.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: '[name].bundle.js',
   },
   module: {
     rules: [
@@ -40,6 +39,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/views/index.html',
       filename: './index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/views/areas/education.html',
+      filename: './education.html',
     }),
     new CleanWebpackPlugin({
       // Simulate the removal of files
