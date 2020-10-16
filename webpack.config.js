@@ -10,7 +10,7 @@ module.exports = {
   entry: {
     homePage: './src/js/index.js',
     education: './src/js/project-areas/education.js',
-    // mentalHealth: './src/js/project-areas/mentalHealth.js', 
+    mentalHealth: './src/js/project-areas/mentalHealth.js', 
     // basicIncome: './src/js/project-areas/basicIncome.js', 
     // animalWelfare: './src/js/project-areas/animalWelfare.js', 
   },
@@ -46,6 +46,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/views/areas/education.html',
       filename: './education.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/views/areas/mental-health.html',
+      filename: './mental-health.html',
     }),
     new CleanWebpackPlugin({
       // Simulate the removal of files
