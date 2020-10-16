@@ -1,7 +1,12 @@
-// remove file extension from imports for webpack
-// check out academind lesson on multiple entry points for multi page projects
-
-import { isMenuModalOpen, menuToggleBtnHandler } from './project-areas/headerNavModal';
+import {
+  isMenuModalOpen,
+  menuToggleBtnHandler,
+} from './project-areas/headerNavModal';
+import {
+  navItemHoverHandler,
+  navItemExitHoverHandler,
+  navItemClickHandler
+} from './missionPanelNav';
 
 import arrowGreen from '../media/arrow-green.svg';
 import arrowWhite from '../media/arrow-white.svg';
@@ -15,4 +20,20 @@ import '../styles/index.scss';
 const menuToggleBtn = document.getElementById('header__menu-btn');
 menuToggleBtn.addEventListener('click', menuToggleBtnHandler);
 
-export { isMenuModalOpen, menuToggleBtnHandler };
+const navItems = document.querySelectorAll('.mission__nav-item__container');
+const navItemsArray = Array.from(navItems);
+
+for (const navItem of navItemsArray) {
+  console.log(navItem);
+  navItem.addEventListener('mouseenter', navItemHoverHandler);
+  navItem.addEventListener('mouseleave', navItemExitHoverHandler);
+  navItem.addEventListener('click', navItemClickHandler);
+}
+
+export {
+  isMenuModalOpen,
+  menuToggleBtnHandler,
+  navItemHoverHandler,
+  navItemExitHoverHandler,
+  navItemClickHandler
+};
