@@ -10,6 +10,9 @@ module.exports = {
   entry: {
     homePage: './src/js/index.js',
     education: './src/js/project-areas/education.js',
+    // mentalHealth: './src/js/project-areas/mentalHealth.js', 
+    // basicIncome: './src/js/project-areas/basicIncome.js', 
+    // animalWelfare: './src/js/project-areas/animalWelfare.js', 
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
