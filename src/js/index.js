@@ -24,7 +24,6 @@ const navItems = document.querySelectorAll('.mission__nav-item__container');
 const navItemsArray = Array.from(navItems);
 
 for (const navItem of navItemsArray) {
-  console.log(navItem);
   navItem.addEventListener('mouseenter', navItemHoverHandler);
   navItem.addEventListener('mouseleave', navItemExitHoverHandler);
   navItem.addEventListener('click', navItemClickHandler);
