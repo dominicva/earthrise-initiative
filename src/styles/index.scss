@@ -105,6 +105,7 @@ $breakpoint-large: 60rem;
   margin: auto;
 
   @media (min-width: $breakpoint-large) {
+    max-width: 42rem;
     margin: 0;
   }
 }
@@ -115,6 +116,7 @@ $breakpoint-large: 60rem;
 
   @media (min-width: $breakpoint-large) {
     font-size: 2rem;
+    line-height: 2.75rem;
   }
 }
 
