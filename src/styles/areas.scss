@@ -1,11 +1,23 @@
+// Color palette
+$off-black: #1f1f1f;
+$off-white: #eef2f1;
+$pure-white: #fff;
+$turqoise: #2cdec0;
+$orange: #fb6520;
+
+// breakpoints
+$breakpoint-small: 35rem;
+$breakpoint-tablet: 48rem;
+$breakpoint-large: 60rem;
+
 #quote__section {
   display: flex;
   flex-direction: column;
-  background-color: var(--off-black);
+  background-color: $off-black;
 }
 
 #breadcrumbs {
-  color: var(--off-white);
+  color: $off-white;
   display: block;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -19,13 +31,13 @@ q {
   text-align: center;
   font-family: 'Cousine', monospace;
   font-size: 1.5rem;
-  color: var(--pure-white);
+  color: $pure-white;
   line-height: 2.25rem;
 }
 
 #quote__attribution {
   margin: 1rem 0 3rem 0;
-  color: var(--off-white);
+  color: $off-white;
   text-align: center;
 }
 
@@ -43,7 +55,7 @@ q {
 }
 
 main {
-  background-color: var(--off-white);
+  background-color: $off-white;
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
@@ -77,7 +89,7 @@ h1 {
 }
 
 .project-preview:hover {
-  background-color: var(--pure-white);
+  background-color: $pure-white;
   cursor: pointer;
 }
 

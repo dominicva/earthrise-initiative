@@ -7,12 +7,21 @@
 /* Fonts ==>> Cousine (monospace) */
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
 
-/* Earthrise style guide */
-@import './style-guide.scss';
+// Color palette
+$off-black: #1f1f1f;
+$off-white: #eef2f1;
+$pure-white: #fff;
+$turqoise: #2cdec0;
+$orange: #fb6520;
+
+// breakpoints
+$breakpoint-small: 35rem;
+$breakpoint-tablet: 48rem;
+$breakpoint-large: 60rem;
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--off-black);
+  background-color: $off-black;
 }
 
 * {
@@ -40,8 +49,8 @@ header {
     'logo toggle'
     'nav-items nav-items';
   align-items: center;
-  background-color: var(--off-black);
-  color: var(--pure-white);
+  background-color: $off-black;
+  color: $pure-white;
 }
 
 .header__logo {
@@ -54,7 +63,7 @@ header {
   color: inherit;
 }
 
-@media (min-width: 35rem) {
+@media (min-width: $breakpoint-small) {
   .header__logo {
     font-size: 1rem;
     letter-spacing: 3px;
@@ -84,8 +93,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--off-black);
-  background-color: var(--off-white);
+  color: $off-black;
+  background-color: $off-white;
 }
 
 .header__nav-item {
@@ -112,12 +121,12 @@ footer {
   letter-spacing: 1.8px;
   line-height: 1.35rem;
   text-transform: uppercase;
-  color: var(--pure-white);
+  color: $pure-white;
   margin-bottom: 0.5rem;
 }
 
 .copyright {
-  color: var(--pure-white);
+  color: $pure-white;
   font-size: 0.8rem;
 }
 
@@ -125,5 +134,5 @@ footer {
   display: block;
   margin-top: 0.5rem;
   font-weight: 600;
-  color: var(--pure-white);
+  color: $pure-white;
 }

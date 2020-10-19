@@ -1,15 +1,27 @@
-:root {
-  /* colors */
-  --off-black: #1f1f1f;
-  --off-white: #eef2f1;
-  --pure-white: #fff;
-  --turqoise: #2cdec0;
-  --orange: #fb6520;
-}
+// :root {
+//   /* colors */
+//   --off-black: #1f1f1f;
+//   --off-white: #eef2f1;
+//   --pure-white: #fff;
+//   --turqoise: #2cdec0;
+//   --orange: #fb6520;
+// }
+
+// Color palette
+$off-black: #1f1f1f;
+$off-white: #eef2f1;
+$pure-white: #fff;
+$turqoise: #2cdec0;
+$orange: #fb6520;
+
+// breakpoints
+$breakpoint-small: 35rem;
+$breakpoint-tablet: 48rem;
+$breakpoint-large: 60rem;
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: var(--off-black);
+  color: $off-black;
   min-width: 20rem;
 }
 
@@ -37,7 +49,7 @@ h4 {
   font-variant-caps: all-small-caps;
   font-size: 1.25rem;
   letter-spacing: 0.5px;
-  color: var(--orange);
+  color: $orange;
 }
 
 p {

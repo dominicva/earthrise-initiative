@@ -1,16 +1,35 @@
+// having trouble getting imports to work
+// for now declaring in each file
+// Color palette
+$off-black: #1f1f1f;
+$off-white: #eef2f1;
+$pure-white: #fff;
+$turqoise: #2cdec0;
+$orange: #fb6520;
+
+// breakpoints
+$breakpoint-small: 35rem;
+$breakpoint-tablet: 48rem;
+$breakpoint-large: 60rem;
+
 #hero {
   height: 70vh;
   background-image: url('../media/earthrise-hero-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 1rem;
-  background-color: var(--off-black);
+  background-color: $off-black;
   display: flex;
   align-items: center;
+
+  @media (min-width: $breakpoint-large) {
+    height: 80vh;
+    background-position: 70% 0rem;
+  }
 }
 
 #mission {
-  background-color: var(--off-black);
+  background-color: $off-black;
 }
 
 #mission-statement {
@@ -18,23 +37,31 @@
   line-height: 3rem;
   font-weight: 400;
   margin: 3rem auto;
-  color: var(--pure-white);
+  color: $pure-white;
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    line-height: 4.25rem;
+    max-width: 50rem;
+    margin: 4rem 0;
+    padding-left: 9rem;
+  }
 }
 
 .mission__nav {
   max-width: 35rem;
   margin: auto;
-}
 
-.mission__nav-items {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: var(--turqoise);
-}
-
-.mission__nav-item__container {
-  padding: 0.5rem;
+  .mission__nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $turqoise;
+  }
+  .mission__nav-item__container {
+    padding: 0.5rem;
+  }
 }
 
 .mission__nav-items a {
@@ -47,55 +74,48 @@
   font-weight: 500;
   line-height: 1.2rem;
   letter-spacing: 0.5px;
-}
 
-.mission__nav__nav-arrow {
-  margin-top: 0.5rem;
-  opacity: 0;
-}
-
-.active {
-  opacity: 1;
-}
-
-@media (min-width: 60rem) {
-  #hero {
-    height: 80vh;
-    background-position: 70% 0rem;
-  }
-  #mission-statement {
-    font-size: 2.5rem;
-    letter-spacing: 1.5px;
-    line-height: 4.25rem;
-    max-width: 50rem;
-    margin: 4rem auto;
-  }
-
-  .mission__nav-items a {
+  @media (min-width: $breakpoint-large) {
     font-size: 0.8rem;
   }
 
-  #areas-question {
-    font-size: 2rem;
-    margin: 4rem auto;
+  .mission__nav__nav-arrow {
+    margin-top: 0.5rem;
+    opacity: 0;
+  }
+
+  .active {
+    opacity: 1;
   }
 }
 
 #areas-preview {
   padding-top: 6rem;
   padding-bottom: 10rem;
-  background-color: var(--off-white);
+  background-color: $off-white;
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 10rem;
+    padding-bottom: 14rem;
+  }
 }
 
 #areas-preview > * {
   max-width: 35rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0;
+  }
 }
 
 #areas-question {
   margin-top: 0.5rem;
   margin-bottom: 2.75rem;
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 2rem;
+  }
 }
 
 #explore-projects__btn {
@@ -107,7 +127,7 @@
 #explore-projects__btn__nav-arrow {
   height: 2.5rem;
   width: 2.5rem;
-  border: 1px solid var(--off-black);
+  border: 1px solid $off-black;
   padding: 0.25rem;
   margin-right: 1rem;
 }

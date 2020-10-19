@@ -1,7 +1,7 @@
 import { isMenuModalOpen, menuToggleBtnHandler } from '../project-areas/headerNavModal';
 
 import '../../styles/resets.scss';
-import '../../styles/style-guide.scss';
+import '../../styles/_style-guide.scss';
 import '../../styles/shared.scss';
 import '../../styles/areas.scss';
 

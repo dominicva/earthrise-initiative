@@ -13,7 +13,7 @@ import arrowWhite from '../media/arrow-white.svg';
 import rightArrowDark from '../media/right-arrow-dark.svg';
 
 import '../styles/resets.scss';
-import '../styles/style-guide.scss';
+import '../styles/_style-guide.scss';
 import '../styles/shared.scss';
 import '../styles/index.scss';
 
