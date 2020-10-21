@@ -9,6 +9,7 @@ module.exports = {
   mode: 'development',
   entry: {
     homePage: './src/js/index.js',
+    projects: './src/js/projects.js',
     education: './src/js/project-areas/education.js',
     mentalHealth: './src/js/project-areas/mentalHealth.js', 
     // basicIncome: './src/js/project-areas/basicIncome.js', 
@@ -50,6 +51,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/views/areas/mental-health.html',
       filename: './mental-health.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/views/projects.html',
+      filename: './projects.html',
     }),
     new CleanWebpackPlugin({
       // Simulate the removal of files
