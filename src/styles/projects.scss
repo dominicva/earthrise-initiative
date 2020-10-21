@@ -9,3 +9,21 @@ $orange: #fb6520;
 $breakpoint-small: 35rem;
 $breakpoint-tablet: 48rem;
 $breakpoint-large: 60rem;
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 3rem 0;
+  max-width: 50rem;
+  margin: auto;
+}
+
+// h1 {
+//   padding-top: 4rem;
+
+//   @media (min-width: $breakpoint-tablet) {
+//     padding-top: 6rem;
+//   }
+// }
