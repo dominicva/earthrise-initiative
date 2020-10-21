@@ -7,6 +7,9 @@
 /* Fonts ==>> Cousine (monospace) */
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
 
+// Fonts ==>> Roboto Mono
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
 // Color palette
 $off-black: #1f1f1f;
 $off-white: #eef2f1;
@@ -55,7 +58,7 @@ header {
 
 .header__logo {
   grid-area: logo;
-  font-family: 'Cousine', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.85rem;
   letter-spacing: 2px;
   line-height: 1.35rem;
@@ -116,7 +119,7 @@ footer {
 }
 
 .footer__logo {
-  font-family: 'Cousine', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.8rem;
   letter-spacing: 1.8px;
   line-height: 1.35rem;

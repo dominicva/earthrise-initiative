@@ -126,14 +126,20 @@ $breakpoint-large: 60rem;
   width: fit-content;
 }
 
-#explore-projects__btn__nav-arrow {
+.explore-projects__btn__nav-arrow {
   height: 2.5rem;
   width: 2.5rem;
   border: 1px solid $off-black;
   padding: 0.25rem;
   margin-right: 1rem;
+  background: url('../media/right-arrow-dark.svg') center/32px no-repeat;
 }
 
-#explore-projects__btn__text {
+.hover {
+  background-color: $turqoise;
+  border: none;
+}
+
+.explore-projects__btn__text {
   letter-spacing: 0.5px;
 }

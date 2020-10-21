@@ -5,8 +5,13 @@ import {
 import {
   navItemHoverHandler,
   navItemExitHoverHandler,
-  navItemClickHandler
+  navItemClickHandler,
 } from './missionPanelNav';
+
+import {
+  exploreProjectsBtn,
+  exploreProjectsBtnHover,
+} from './exploreProjectsHover';
 
 import arrowGreen from '../media/arrow-green.svg';
 import arrowWhite from '../media/arrow-white.svg';
@@ -29,10 +34,14 @@ for (const navItem of navItemsArray) {
   navItem.addEventListener('click', navItemClickHandler);
 }
 
+exploreProjectsBtn.addEventListener('mouseover', exploreProjectsBtnHover);
+exploreProjectsBtn.addEventListener('mouseout', exploreProjectsBtnHover);
+
 export {
   isMenuModalOpen,
   menuToggleBtnHandler,
   navItemHoverHandler,
   navItemExitHoverHandler,
-  navItemClickHandler
+  navItemClickHandler,
+  exploreProjectsBtnHover,
 };
