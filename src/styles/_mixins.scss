@@ -1,0 +1,52 @@
+@mixin hero-heading($color) {
+  color: $color;
+  font-family: $heading-font;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+@mixin heading-2($color) {
+  font-family: $heading-font;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $color;
+  text-transform: capitalize;
+}
+
+@mixin body-text {
+  font-family: $body-font;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+@mixin theme($pimary-color, $rotate: 120deg, $darkenpct: 20%) {
+  $other-color: adjust-hue($pimary-color, $rotate);
+  $other2-color: adjust-hue($pimary-color, 180deg);
+  $secondary-color: adjust-hue($pimary-color, -$rotate);
+
+  .btn-primary {
+    background-color: $pimary-color;
+  }
+  .btn-secondary {
+    background-color: $secondary-color;
+  }
+  .btn-other {
+    background-color: $other-color;
+  }
+  .btn-other2 {
+    background-color: $other2-color;
+  }
+}
+
+// produce batch of top and bottom margins a
+// as multiples of 8px
+// @for $i from 1 through 5 {
+//   $size: $i * 8;
+//   .m-t-#{$size} {
+//     margin-top: #{$size}px;
+//   }
+//   .m-b-#{$size} {
+//     margin-bottom: #{$size}px;
+//   }
+// }
