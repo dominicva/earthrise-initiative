@@ -1,24 +1,3 @@
-// :root {
-//   /* colors */
-//   --off-black: #1f1f1f;
-//   --off-white: #eef2f1;
-//   --pure-white: #fff;
-//   --turqoise: #2cdec0;
-//   --orange: #fb6520;
-// }
-
-// Color palette
-$off-black: #1f1f1f;
-$off-white: #eef2f1;
-$pure-white: #fff;
-$turqoise: #2cdec0;
-$orange: #fb6520;
-
-// breakpoints
-$breakpoint-small: 35rem;
-$breakpoint-tablet: 48rem;
-$breakpoint-large: 60rem;
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: $off-black;

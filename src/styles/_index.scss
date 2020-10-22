@@ -1,16 +1,5 @@
-// having trouble getting imports to work
-// for now declaring in each file
-// Color palette
-$off-black: #1f1f1f;
-$off-white: #eef2f1;
-$pure-white: #fff;
-$turqoise: #2cdec0;
-$orange: #fb6520;
-
-// breakpoints
-$breakpoint-small: 35rem;
-$breakpoint-tablet: 48rem;
-$breakpoint-large: 60rem;
+// @import '_layout';
+@import '_variables';
 
 #hero {
   height: 70vh;
@@ -120,10 +109,12 @@ $breakpoint-large: 60rem;
   }
 }
 
-#explore-projects__btn {
-  display: flex;
-  align-items: center;
-  width: fit-content;
+.btn {
+  &.explore-projects {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
 }
 
 .explore-projects__btn__nav-arrow {
@@ -133,11 +124,11 @@ $breakpoint-large: 60rem;
   padding: 0.25rem;
   margin-right: 1rem;
   background: url('../media/right-arrow-dark.svg') center/32px no-repeat;
-}
 
-.hover {
-  background-color: $turqoise;
-  border: none;
+  &.hover {
+    background-color: $turqoise;
+    border: none;
+  }
 }
 
 .explore-projects__btn__text {
