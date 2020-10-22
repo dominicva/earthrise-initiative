@@ -98,6 +98,7 @@ header {
   align-items: center;
   color: $off-black;
   background-color: $off-white;
+  animation: fade-slide-in 0.3s ease-out forwards;
 }
 
 .header__nav-item {
