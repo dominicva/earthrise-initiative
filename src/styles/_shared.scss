@@ -30,7 +30,7 @@ html {
     position: fixed;
     right: 0;
     left: 0;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3rem;
@@ -39,6 +39,7 @@ html {
       'nav-items nav-items';
     align-items: center;
     color: $pure-white;
+    background-color: $off-black;
   }
 
   &__logo {
