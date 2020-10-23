@@ -1,78 +1,92 @@
 @import '_variables';
 
-#hero {
-  height: 70vh;
-  background-image: url('../media/earthrise-hero-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 70% 1rem;
-  background-color: $off-black;
-  display: flex;
-  align-items: center;
-
-  @media (min-width: $breakpoint-large) {
-    height: 80vh;
-    background-position: 70% 0rem;
+.hero {
+  &.container {
+    @include container($off-black);
   }
-}
 
-#mission {
-  background-color: $off-black;
-}
-
-#mission-statement {
-  @include hero-heading($pure-white);
-  max-width: 35rem;
-  margin: 3rem auto;
-
-  @media (min-width: $breakpoint-large) {
-    letter-spacing: 1.5px;
-    line-height: 4.25rem;
-    max-width: 50rem;
-    margin: 4rem 0;
-    padding-left: 9rem;
+  &__bg-image {
+    max-width: $xl-screen;
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    background: $off-black url('../media/earthrise-hero-bg.png') no-repeat 70%
+      1rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
   }
-}
 
-.mission__nav {
-  max-width: 35rem;
-  margin: auto;
+  &__bg-nav-arrow {
+    margin-left: 0.5rem;
+  }
 
-  .mission__nav-items {
+  &__section {
+    max-width: $xl-screen;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+
+  &__mission-statement {
+    @include hero-heading($pure-white);
+    margin-bottom: 4rem;
+
+    @media (min-width: $breakpoint-large) {
+      letter-spacing: 1.5px;
+      line-height: 4.25rem;
+      max-width: 50rem;
+      margin: 4rem 0;
+      padding-left: 9rem;
+    }
+  }
+
+  &__nav {
+    max-width: 35rem;
+    margin: auto;
+  }
+
+  &__nav-items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: $turqoise;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: $heading-font;
+      font-size: $link-font-size;
+      font-weight: 500;
+      line-height: 1.2rem;
+      // letter-spacing: 0.5px;
+
+      @media (min-width: $breakpoint-large) {
+        font-size: 0.8rem;
+      }
+    }
   }
-  .mission__nav-item__container {
+
+  &__nav-item.container {
     padding: 0.5rem;
   }
-}
 
-.mission__nav-items a {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-weight: 500;
-  line-height: 1.2rem;
-  letter-spacing: 0.5px;
-
-  @media (min-width: $breakpoint-large) {
-    font-size: 0.8rem;
-  }
-
-  .mission__nav__nav-arrow {
+  &__nav-arrow {
     margin-top: 0.5rem;
     opacity: 0;
   }
 
-  .active {
+  &__nav-arrow.active {
     opacity: 1;
   }
+
+  // @media (min-width: $breakpoint-large) {
+  //   height: 80vh;
+  //   background-position: 70% 0rem;
+  // }
 }
+
 
 #areas-preview {
   padding-top: 6rem;
