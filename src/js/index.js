@@ -6,7 +6,7 @@ import {
   navItemHoverHandler,
   navItemExitHoverHandler,
   navItemClickHandler,
-} from './missionPanelNav';
+} from './heroNav';
 
 import {
   exploreProjectsBtn,
@@ -22,7 +22,7 @@ import '../styles/app.scss';
 const menuBtn = document.getElementById('main-header__menu-btn');
 menuBtn.addEventListener('click', headerNavToggleHandler);
 
-const navItems = document.querySelectorAll('.mission__nav-item__container');
+const navItems = document.querySelectorAll('.hero__nav-item.container');
 const navItemsArray = Array.from(navItems);
 
 for (const navItem of navItemsArray) {

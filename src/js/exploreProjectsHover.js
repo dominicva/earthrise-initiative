@@ -1,5 +1,5 @@
-export const exploreProjectsBtn = document.getElementById(
-  'explore-projects__btn'
+export const exploreProjectsBtn = document.querySelector(
+  '.explore-projects-btn.container'
 );
 
 export const exploreProjectsBtnHover = () => {

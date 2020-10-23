@@ -8,9 +8,9 @@ export const navItemExitHoverHandler = (event) => {
 };
 
 export const navItemClickHandler = (event) => {
-  const areaTitle = document.getElementById('area__title');
-  const areasQuestion = document.getElementById('areas-question');
-  const exploreProjectsBtn = document.getElementById('explore-projects__btn');
+  const areaTitle = document.getElementById('area-title');
+  const areasQuestion = document.getElementById('area-question');
+  const exploreProjectsBtn = document.getElementById('explore-projects-btn');
 
   switch (event.target.innerHTML) {
     case 'education':
