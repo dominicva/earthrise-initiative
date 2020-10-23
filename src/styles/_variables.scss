@@ -17,16 +17,9 @@ $breakpoint-large: 60rem;
 $xl-screen: 75rem;
 
 // base font sizes (mobile)
-$h1-font-size: 1.25rem;
-$h2-font-size: $h1-font-size * 0.9;
-$h3-font-size: $h2-font-size * 0.9;
-$h4-font-size: $h3-font-size * 0.9;
-$link-font-size: $h4-font-size * 0.9;
+$h1-font-size: 1.5rem;
+$h2-font-size: $h1-font-size * 0.85;
+$h3-font-size: $h2-font-size * 0.85;
+$h4-font-size: $h3-font-size * 0.85;
+$link-font-size: $h4-font-size * 0.85;
 $body-font-size: $h4-font-size;
-
-
-// $breakpoints: (
-//   'small': 35rem,
-//   'tablet': 48rem,
-//   'large': 75rem
-// );

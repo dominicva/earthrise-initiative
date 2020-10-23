@@ -1,12 +1,32 @@
-#quote__section {
-  display: flex;
-  flex-direction: column;
-  padding-top: 8rem;
-  background-color: $off-black;
+.quote {
+  &.container {
+    @include container($off-black);
+    padding: 8rem 1rem 0 1rem;
+  }
 
-  @media (min-width: $breakpoint-large) {
-    padding-top: 8rem;
-    padding-bottom: 2rem;
+  &__section {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-large) {
+      padding-top: 8rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__quote {
+    @include heading-2($pure-white, $heading-font);
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  &__attribution {
+    @include heading-3($pure-white);
+    margin: 1.5rem 0 2.5rem 0;
+    text-align: center;
   }
 }
 
@@ -23,57 +43,33 @@
   }
 }
 
-q {
-  max-width: 35rem;
-  margin: auto;
-  text-align: center;
-  font-family: 'Cousine', monospace;
-  font-size: 1.5rem;
-  color: $pure-white;
-  line-height: 2.25rem;
-}
-
-#quote__attribution {
-  margin: 1.5rem 0 2.5rem 0;
-  color: $off-white;
-  text-align: center;
-}
-
-@media (min-width: 48rem) {
-  q {
-    font-size: 2rem;
-    line-height: 2.75rem;
-    max-width: 40rem;
-  }
-
-  #quote__attribution {
-    font-size: 1.25rem;
-    margin-top: 1.5rem;
-  }
-}
-
-main {
-  background-color: $off-white;
+.area {
+  @include container($off-white);
   padding: 2rem 1rem 4rem 1rem;
+
+  &__intro-section {
+    @include grid;
+  }
+
+  &__intro-heading {
+    @include hero-heading($off-black);
+    text-transform: uppercase;
+  }
+
+  &__projects-section {
+    @include grid;
+  }
 }
 
-// h2 {
-//   @include heading-2($off-black);
-// }
+.area-intro {
+  &__sub-heading {
+    @include heading-4;
+    margin-bottom: 0.5rem;
+  }
 
-#area-intro,
-#area-projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  max-width: 50rem;
-  margin: auto;
-}
-
-#area-intro p {
-  line-height: 1.5rem;
-  margin-top: 0.5rem;
+  &__text {
+    @include body-text
+  }
 }
 
 .project-preview {
@@ -100,3 +96,16 @@ h3 {
   font-size: 1.5rem;
   margin: 0.25rem 0;
 }
+
+// @media (min-width: 48rem) {
+//   q {
+//     font-size: 2rem;
+//     line-height: 2.75rem;
+//     max-width: 40rem;
+//   }
+
+//   #quote__attribution {
+//     font-size: 1.25rem;
+//     margin-top: 1.5rem;
+//   }
+// }
