@@ -6,9 +6,10 @@
   font-weight: 400;
 }
 
-@mixin heading-2($color) {
-  font-family: $heading-font;
+@mixin heading-2($color, $font, $letter-spacing: 0) {
+  font-family: $font;
   font-size: $h2-font-size;
+  letter-spacing: $letter-spacing;
   line-height: $h2-font-size * 1.5;
   font-weight: 400;
   color: $color;
@@ -26,6 +27,11 @@
   letter-spacing: 0.5px;
   color: $orange;
 } 
+
+@mixin link-text($color) {
+  font-family: $link-font;
+  color: $color;
+}
 
 @mixin body-text {
   font-family: $body-font;

@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $off-black;
+  min-width: 20rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
