@@ -53,7 +53,8 @@
 
 .area-intro,
 .area-projects,
-.projects {
+.projects,
+.resources-main {
   &__section {
     @include grid;
     margin-bottom: 4rem;

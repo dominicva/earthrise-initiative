@@ -10,10 +10,11 @@ module.exports = {
   entry: {
     homePage: './src/js/index.js',
     projects: './src/js/projects.js',
+    resources: './src/js/resources.js',
     education: './src/js/project-areas/education.js',
     mentalHealth: './src/js/project-areas/mentalHealth.js', 
     basicIncome: './src/js/project-areas/basicIncome.js', 
-    // animalWelfare: './src/js/project-areas/animalWelfare.js', 
+    animalWelfare: './src/js/project-areas/animalWelfare.js', 
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -45,6 +46,14 @@ module.exports = {
       filename: './index.html',
     }),
     new HtmlWebpackPlugin({
+      template: './src/views/projects.html',
+      filename: './projects.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/views/resources.html',
+      filename: './resources.html',
+    }),
+    new HtmlWebpackPlugin({
       template: './src/views/areas/education.html',
       filename: './education.html',
     }),
@@ -53,12 +62,12 @@ module.exports = {
       filename: './mental-health.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/views/projects.html',
-      filename: './projects.html',
-    }),
-    new HtmlWebpackPlugin({
       template: './src/views/areas/basic-income.html',
       filename: './basic-income.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/views/areas/animal-welfare.html',
+      filename: './animal-welfare.html',
     }),
     new CleanWebpackPlugin({
       // Simulate the removal of files
