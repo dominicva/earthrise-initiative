@@ -6,11 +6,11 @@
     <title>Earthrise Initiative</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a class="header__logo" href="./index.html">earthrise initiative</a>
-      <a id="header__menu-btn">menu</a>
+      <button type="button" id="header__menu-btn">menu</button>
       <nav class="header__nav">
-        <ul class="header__nav_items">
+        <ul class="header__nav-items">
           <li class="header__nav-item"><a href="">mission</a></li>
           <li class="header__nav-item">
             <a href="./projects.html">projects</a>
@@ -21,62 +21,68 @@
         </ul>
       </nav>
     </header>
-    <section id="hero">
-      <a href="#mission"
-        ><img src="./arrow-white.svg" alt="down navigation arrow"
-      /></a>
-    </section>
-    <section id="mission">
-      <h1 id="mission-statement">
-        we act to accelerate the global shift towards equality of consideration
-        for all
-      </h1>
-      <nav class="mission__nav">
-        <ul class="mission__nav-items">
-          <a href="#areas-preview" class="mission__nav-item__container">
-            <li>education</li>
-            <img
-              class="mission__nav__nav-arrow"
-              src="./arrow-green.svg"
-              alt="down arrow"
-            />
-          </a>
-          <a href="#areas-preview" class="mission__nav-item__container">
-            <li>mental health</li>
-            <img
-              class="mission__nav__nav-arrow"
-              src="./arrow-green.svg"
-              alt="down arrow"
-            />
-          </a>
-          <a href="#areas-preview" class="mission__nav-item__container">
-            <li>basic income</li>
-            <img
-              class="mission__nav__nav-arrow"
-              src="./arrow-green.svg"
-              alt="down arrow"
-            />
-          </a>
-          <a href="#areas-preview" class="mission__nav-item__container">
-            <li>animal welfare</li>
-            <img
-              class="mission__nav__nav-arrow"
-              src="./arrow-green.svg"
-              alt="down arrow"
-            />
-          </a>
-        </ul>
-      </nav>
-    </section>
-    <section id="areas-preview">
-      <h4 id="area__title">education</h4>
-      <h2 id="areas-question">
+    <div class="hero container">
+      <section id="hero__bg-image">
+        <a href="#mission"
+          ><img src="./arrow-white.svg" alt="down navigation arrow"
+        /></a>
+      </section>
+      <section id="mission" class="hero__section">
+        <h1 id="mission-statement">
+          we act to accelerate the global shift towards equality of
+          consideration for all
+        </h1>
+        <nav class="hero__nav">
+          <ul class="hero__nav-items">
+            <a href="#areas-preview" class="hero__nav-item container">
+              <li>education</li>
+              <img
+                class="hero__nav-arrow"
+                src="./arrow-green.svg"
+                alt="down arrow"
+              />
+            </a>
+            <a href="#areas-preview" class="hero__nav-item container">
+              <li>mental health</li>
+              <img
+                class="hero__nav-arrow"
+                src="./arrow-green.svg"
+                alt="down arrow"
+              />
+            </a>
+            <a href="#areas-preview" class="hero__nav-item container">
+              <li>basic income</li>
+              <img
+                class="hero__nav-arrow"
+                src="./arrow-green.svg"
+                alt="down arrow"
+              />
+            </a>
+            <a href="#areas-preview" class="hero__nav-item container">
+              <li>animal welfare</li>
+              <img
+                class="hero__nav-arrow"
+                src="./arrow-green.svg"
+                alt="down arrow"
+              />
+            </a>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    <div class="areas-preview container"></div>
+    <section id="areas-preview" class="areas-preview">
+      <h4 id="area-title" class="areas-preview__sub-heading">education</h4>
+      <h2 id="area-question" class="areas-preview__main-heading">
         How can we provide everyone with a world-class education?
       </h2>
-      <div>
-        <a id="explore-projects__btn" class="btn explore-projects" href="./education.html">
-          <div class="explore-projects__btn__nav-arrow" class=""></div>
-          <p class="explore-projects__btn__text">Explore projects</p>
+      <div class="explore-projects__btn container">
+        <a
+          id="explore-projects__btn"
+          class="explore-projects__btn-arrow"
+          href="./education.html"
+        >
+          <p class="explore-projects__btn-text">Explore projects</p>
         </a>
       </div>
     </section>
