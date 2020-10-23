@@ -39,6 +39,10 @@
   }
 }
 
+@mixin container($bg-color) {
+  background-color: $bg-color;
+}
+
 // produce batch of top and bottom margins a
 // as multiples of 8px
 // @for $i from 1 through 5 {

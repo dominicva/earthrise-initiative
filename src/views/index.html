@@ -8,7 +8,7 @@
   <body>
     <header class="header">
       <a class="header__logo" href="./index.html">earthrise initiative</a>
-      <button type="button" id="header__menu-btn">menu</button>
+      <button type="button" id="header__menu-btn" class="header__menu-btn">menu</button>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item"><a href="">mission</a></li>
@@ -27,8 +27,8 @@
           ><img src="./arrow-white.svg" alt="down navigation arrow"
         /></a>
       </section>
-      <section id="mission" class="hero__section">
-        <h1 id="mission-statement">
+      <section class="hero__section">
+        <h1 id="mission-statement" class="hero__mission-statement">
           we act to accelerate the global shift towards equality of
           consideration for all
         </h1>
@@ -70,32 +70,33 @@
         </nav>
       </section>
     </div>
-    <div class="areas-preview container"></div>
-    <section id="areas-preview" class="areas-preview">
-      <h4 id="area-title" class="areas-preview__sub-heading">education</h4>
-      <h2 id="area-question" class="areas-preview__main-heading">
-        How can we provide everyone with a world-class education?
-      </h2>
-      <div class="explore-projects__btn container">
-        <a
-          id="explore-projects__btn"
-          class="explore-projects__btn-arrow"
-          href="./education.html"
-        >
-          <p class="explore-projects__btn-text">Explore projects</p>
-        </a>
-      </div>
-    </section>
+    <div class="areas-preview container">
+      <section id="areas-preview" class="areas-preview">
+        <h4 id="area-title" class="areas-preview__sub-heading">education</h4>
+        <h2 id="area-question" class="areas-preview__main-heading">
+          How can we provide everyone with a world-class education?
+        </h2>
+        <div class="explore-projects__btn container">
+          <a
+            id="explore-projects__btn"
+            class="explore-projects__btn-arrow"
+            href="./education.html"
+          >
+            <p class="explore-projects__btn-text">Explore projects</p>
+          </a>
+        </div>
+      </section>
+    </div>
     <footer>
       <div class="footer__nav">
-        <h4>contact</h4>
-        <a class="contact__email" href="mailto:hello@earthriseinitiative.com"
+        <h4 class="footer__col-heading">contact</h4>
+        <a class="footer__contact--email" href="mailto:hello@earthriseinitiative.com"
           >hello@earthriseinitiative.com</a
         >
       </div>
       <div>
         <p class="footer__logo">earthrise initiative</p>
-        <p class="copyright">© 2020</p>
+        <p class="footer__copyright">© 2020</p>
       </div>
     </footer>
   </body>
