@@ -1,20 +1,28 @@
-#projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  padding: 3rem 0;
-  max-width: 50rem;
-  margin: auto;
-}
+// #projects {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+//   grid-column-gap: 2rem;
+//   grid-row-gap: 2rem;
+//   // padding: 3rem 0;
+//   max-width: 50rem;
+//   margin: auto;
+// }
 
-main {
-  // padding-top: 5rem;
-}
-// h1 {
-//   padding-top: 4rem;
-
-//   @media (min-width: $breakpoint-tablet) {
+// .projects {
+//   &.container {
+//     @include container($off-white);
 //     padding-top: 6rem;
+//     padding-left: 1rem;
+//     padding-right: 1rem;
 //   }
+
+  // &__heading {
+  //   // beware of extend
+  //   @extend .area-projects__heading;
+  // }
+
+  // &__text {
+  //   // beware of extend
+  //   @extend .area-intro__text
+  // }
 // }

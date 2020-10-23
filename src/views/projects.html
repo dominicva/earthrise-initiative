@@ -6,47 +6,53 @@
     <title>Earthrise – Projects</title>
   </head>
   <body>
-    <header>
-      <a class="header__logo" href="./index.html">earthrise initiative</a>
-      <a id="header__menu-btn">menu</a>
-      <nav class="header__nav">
-        <ul class="header__nav_items">
-          <li class="header__nav-item"><a href="">mission</a></li>
-          <li class="header__nav-item">
-            <a href="./projects.html">projects</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="./resources.html">resources</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="projects">
-        <div>
-          <h1>Projects</h1>
-          <p>
-            Earthrise Initiative's primary output is breakthrough technologies that have the
-            potential to transform people’s lives and become large, sustainable
-            businesses. Our projects undergo many rounds of prototyping,
-            iterating, and de-risking, until they’re ready to polish products
-            and scale operations. At that point, they’ll graduate from X.
+    <div class="main-header container">
+      <header class="main-header__header">
+        <a class="main-header__logo" href="./index.html"
+          >earthrise initiative</a
+        >
+        <a id="main-header__menu-btn" class="main-header__menu-btn"> menu </a>
+        <nav class="main-header__nav">
+          <ul class="main-header__nav-items">
+            <li class="main-header__nav-item">
+              <a href="./index.html">home</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a href="./projects.html">projects</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a href="./resources.html">resources</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main class="projects container">
+      <section id="projects" class="projects__section">
+        <div class="projects__intro">
+          <h1 class="projects__heading">projects we support</h1>
+          <p class="projects__text">
+            Earthrise Initiative's primary output is breakthrough technologies
+            that have the potential to transform people’s lives and become
+            large, sustainable businesses. Our projects undergo many rounds of
+            prototyping, iterating, and de-risking, until they’re ready to
+            polish products and scale operations. At that point, they’ll
+            graduate from X.
           </p>
         </div>
-
         <a
           href="https://www.khanacademy.org"
           target="_blank"
           id="khan-academy-preview"
-          class="project-preview"
+          class="project container"
         >
           <img
             class="project__image"
             src="./khan-academy-logo.svg"
             alt="Khan Academy logo"
           />
-          <h3 class="projects-grid__area">Education</h3>
-          <p>
+          <h3 class="project__heading">Khan Academy</h3>
+          <p class="project__description">
             A nonprofit with the mission to provide a free, world-class
             education for anyone, anywhere.
           </p>
@@ -55,15 +61,15 @@
           href="https://www.realschool.eu"
           target="_blank"
           id="real-school-preview"
-          class="project-preview"
+          class="project container"
         >
           <img
             class="project__image"
             src="https://static.wixstatic.com/media/48d0e2_9091277b2d07400f973f9bc8df0a2546~mv2_d_5839_3935_s_4_2.png/v1/fill/w_214,h_142,al_c,q_85,usm_0.66_1.00_0.01/Real%20School%20-%20RGB%20-%20Main%20Logo.svg"
             alt="Real School"
           />
-          <h3 class="projects-grid__area">Mental Health</h3>
-          <p>
+          <h3 class="project__heading">Real School</h3>
+          <p class="project__description">
             A not-for-profit international school that educates for
             sustainability through project-based learning.
           </p>
@@ -72,36 +78,34 @@
           href="https://www.freecodecamp.org"
           target="_blank"
           id="freecodecamp-preview"
-          class="project-preview"
+          class="project container"
         >
           <img
             class="project__image"
             src="./freecodecamp-vector-logo.svg"
             alt="freeCodeCamp logo"
           />
-          <h3 class="projects-grid__area">Basic Income</h3>
-          <p>
-            freeCodeCamp is a nonprofit community that helps you learn to code
-            by building projects.
-          </p> </a
-        ><a
-          href="https://www.freecodecamp.org"
-          target="_blank"
-          id="freecodecamp-preview"
-          class="project-preview"
-        >
-          <img
-            class="project__image"
-            src="./freecodecamp-vector-logo.svg"
-            alt="freeCodeCamp logo"
-          />
-          <h3 class="projects-grid__area">Basic Income</h3>
-          <p>
+          <h3 class="project__heading">freeCodeCamp</h3>
+          <p class="project__description">
             freeCodeCamp is a nonprofit community that helps you learn to code
             by building projects.
           </p>
         </a>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__col">
+        <h4 class="footer__col-heading">contact</h4>
+        <a
+          class="footer__contact--email"
+          href="mailto:hello@earthriseinitiative.com"
+          >hello@earthriseinitiative.com</a
+        >
+      </div>
+      <div class="footer__col">
+        <p class="footer__logo">earthrise initiative</p>
+        <p class="footer__copyright">© 2020</p>
+      </div>
+    </footer>
   </body>
 </html>

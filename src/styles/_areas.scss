@@ -43,25 +43,27 @@
   }
 }
 
-.area {
-  @include container($off-white);
-  padding: 2rem 1rem 4rem 1rem;
+.area,
+.projects {
+  &.container {
+    @include container($off-white);
+    padding: 6rem 1rem 4rem 1rem;
+  }
+}
 
-  &__intro-section {
+.area-intro,
+.area-projects,
+.projects {
+  &__section {
     @include grid;
     margin-bottom: 4rem;
   }
 
-  &__projects-section {
-    @include grid;
-  }
-}
-
-.area-intro {
   &__heading {
     @include hero-heading($off-black);
     text-transform: uppercase;
     margin-bottom: 1rem;
+    max-width: 16rem;
   }
 
   &__sub-heading {
@@ -74,16 +76,14 @@
   }
 }
 
-.area-projects {
-  &__heading {
-    @include hero-heading($off-black);
-    text-transform: uppercase;
-  }
-}
-
 .project {
   &.container {
     @include container($pure-white, 0 0 1rem 0);
+  }
+
+  &__image {
+    height: 16rem;
+    width: 100%;
   }
 
   &__heading {
@@ -107,11 +107,6 @@
 #khan-academy-preview img {
   background-color: #1c273c;
   padding: 0 1rem;
-}
-
-.project__image {
-  height: 16rem;
-  width: 100%;
 }
 
 // h3 {
