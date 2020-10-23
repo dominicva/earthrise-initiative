@@ -1,5 +1,3 @@
-@import '_variables';
-
 .hero {
   &.container {
     @include container($off-black);
