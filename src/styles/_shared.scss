@@ -43,19 +43,15 @@ html {
   }
 
   &__logo {
+    @include logo($pure-white);
     grid-area: logo;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    line-height: 1.35rem;
-    text-transform: uppercase;
-    color: inherit;
   }
 
   &__menu-btn {
     grid-area: toggle;
     text-align: right;
     text-transform: capitalize;
+    font-size: $link-font-size;
   }
 
   &__menu-btn:hover {
@@ -96,7 +92,7 @@ html {
   }
 }
 
-footer {
+.footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-column-gap: 2rem;
@@ -104,27 +100,29 @@ footer {
   padding-top: 3rem;
   padding-bottom: 5rem;
   max-width: 50rem;
+  padding: 2rem 1rem 4rem 1rem;
   margin: auto;
-}
+  background-color: $off-black;
 
-.footer__logo {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 0.8rem;
-  letter-spacing: 1.8px;
-  line-height: 1.35rem;
-  text-transform: uppercase;
-  color: $pure-white;
-  margin-bottom: 0.5rem;
-}
+  &__col-heading {
+    @include heading-4;
+  }
 
-.copyright {
-  color: $pure-white;
-  font-size: 0.8rem;
-}
+  &__logo {
+    @include logo($pure-white);
+    margin-bottom: 0.5rem;
+  }
 
-.contact__email {
-  display: block;
-  margin-top: 0.5rem;
-  font-weight: 600;
-  color: $pure-white;
+  &__contact--email {
+    display: block;
+    margin-top: 0.5rem;
+    color: $pure-white;
+    font-family: $link-font;
+    font-size: $h4-font-size;
+  }
+
+  &__copyright {
+    color: $pure-white;
+    font-size: $link-font-size;
+  }
 }

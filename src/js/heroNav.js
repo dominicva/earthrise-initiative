@@ -20,14 +20,12 @@ const setBtnAttribute = link => {
 export const navItemClickHandler = event => {
   const areaTitle = document.getElementById('area-title');
   const areasQuestion = document.getElementById('area-question');
-  // const exploreProjectsBtn = document.getElementById('explore-projects-btn');
 
   switch (event.target.innerHTML) {
     case 'education':
       areaTitle.innerHTML = 'education';
       areasQuestion.innerHTML =
         'How can we provide everyone with a world-class education?';
-      // exploreProjectsBtn.setAttribute('href', './education.html');
       setBtnAttribute('./education.html');
       break;
 
@@ -35,7 +33,6 @@ export const navItemClickHandler = event => {
       areaTitle.innerHTML = 'mental health';
       areasQuestion.innerHTML =
         'How can we combine science and awareness to end mental suffering?';
-      // exploreProjectsBtn.setAttribute('href', './mental-health.html');
       setBtnAttribute('./mental-health.html');
       break;
 

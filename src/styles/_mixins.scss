@@ -26,11 +26,20 @@
   font-size: $h3-font-size;
   letter-spacing: 0.5px;
   color: $orange;
-} 
+}
 
 @mixin link-text($color) {
   font-family: $link-font;
   color: $color;
+}
+
+@mixin logo($color) {
+  font-family: $heading-font;
+  color: $color;
+  font-size: $h4-font-size;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.5rem;
 }
 
 @mixin body-text {
