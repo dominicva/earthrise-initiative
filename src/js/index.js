@@ -1,7 +1,7 @@
 import {
-  isMenuModalOpen,
-  menuToggleBtnHandler,
-} from './project-areas/headerNavModal';
+  isNavOpen,
+  headerNavToggleHandler,
+} from './headerNav';
 import {
   navItemHoverHandler,
   navItemExitHoverHandler,
@@ -19,8 +19,8 @@ import rightArrowDark from '../media/right-arrow-dark.svg';
 
 import '../styles/app.scss';
 
-const menuToggleBtn = document.getElementById('header__menu-btn');
-menuToggleBtn.addEventListener('click', menuToggleBtnHandler);
+const menuBtn = document.getElementById('main-header__menu-btn');
+menuBtn.addEventListener('click', headerNavToggleHandler);
 
 const navItems = document.querySelectorAll('.mission__nav-item__container');
 const navItemsArray = Array.from(navItems);
@@ -35,8 +35,8 @@ exploreProjectsBtn.addEventListener('mouseover', exploreProjectsBtnHover);
 exploreProjectsBtn.addEventListener('mouseout', exploreProjectsBtnHover);
 
 export {
-  isMenuModalOpen,
-  menuToggleBtnHandler,
+  isNavOpen,
+  headerNavToggleHandler,
   navItemHoverHandler,
   navItemExitHoverHandler,
   navItemClickHandler,

@@ -82,8 +82,9 @@ html {
   &__nav-item {
     padding: 1rem;
     text-align: center;
+    font-family: $link-font;
+    font-size: $h2-font-size;
     text-transform: capitalize;
-    font-weight: 600;
   }
 }
 
