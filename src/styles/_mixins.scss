@@ -68,9 +68,10 @@
   }
 }
 
-@mixin container($bg-color) {
+@mixin container($bg-color, $padding: 0) {
   width: 100%;
   background-color: $bg-color;
+  padding: $padding;
 }
 
 @mixin grid {
