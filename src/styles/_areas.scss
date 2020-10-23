@@ -61,6 +61,7 @@
   &__heading {
     @include hero-heading($off-black);
     text-transform: uppercase;
+    margin-bottom: 1rem;
   }
 
   &__sub-heading {
