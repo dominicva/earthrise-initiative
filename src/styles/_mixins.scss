@@ -15,8 +15,8 @@
   color: $color;
 }
 
-@mixin heading-3($color) {
-  font-family: $heading-font;
+@mixin heading-3($color, $font: $heading-font) {
+  font-family: $font;
   font-weight: 400;
   color: $color;
 }
@@ -26,6 +26,7 @@
   font-variant-caps: all-small-caps;
   font-size: $h3-font-size;
   letter-spacing: 0.5px;
+  font-weight: bold;
   color: $orange;
 }
 

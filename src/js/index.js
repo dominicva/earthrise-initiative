@@ -1,7 +1,4 @@
-import {
-  isNavOpen,
-  headerNavToggleHandler,
-} from './headerNav';
+import { isNavOpen, headerNavToggleHandler } from './headerNav';
 import {
   navItemHoverHandler,
   navItemExitHoverHandler,
@@ -40,5 +37,6 @@ export {
   navItemHoverHandler,
   navItemExitHoverHandler,
   navItemClickHandler,
+  exploreProjectsBtn,
   exploreProjectsBtnHover,
 };

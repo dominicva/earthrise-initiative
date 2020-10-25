@@ -18,15 +18,20 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    padding-top: 2rem;
     z-index: 1;
   }
 
-  &__heading {
+  // pre-set higher up cascade in _areas.scss
+  &__intro-heading {
     @include hero-heading($pure-white);
+    text-transform: unset;
+    max-width: 32rem;
     margin-bottom: 4rem;
   }
 
-  &__text {
+  // pre-set higher up cascade in _areas.scss
+  &__intro-text {
     @include heading-3($pure-white);
   }
 
@@ -34,4 +39,51 @@
   //   @include container($off-white, 1rem);
   //   @include grid;
   // }
+}
+
+.resource {
+  &__topic-tags.container {
+    display: flex;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  &__topic-tag {
+    @include heading-4;
+    margin-right: 1rem;
+  }
+}
+
+.resource--image {
+  &.container {
+    @include container(transparent, 0 0 1rem 0);
+  }
+
+  &__image {
+    height: 16rem;
+    width: 100%;
+  }
+
+  &__heading {
+    @include heading-3($off-black, $body-font);
+    margin: 0.25rem 0;
+    padding: 0 1rem;
+  }
+
+  &__description {
+    @include body-text;
+    padding: 0 1rem;
+  }
+}
+
+.resource--text {
+  &__quote {
+    @include heading-3($off-black);
+  }
+
+  &__heading {
+    @include body-text;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-weight: 600;
+  }
 }

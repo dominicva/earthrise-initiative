@@ -1,5 +1,5 @@
 export const exploreProjectsBtn = document.querySelector(
-  '.explore-projects-btn.container'
+  '.explore-projects-btn'
 );
 
 export const exploreProjectsBtnHover = () => {
