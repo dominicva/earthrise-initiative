@@ -17,6 +17,7 @@
 
 @mixin heading-3($color, $font: $heading-font) {
   font-family: $font;
+  font-size: $h3-font-size;
   font-weight: 400;
   color: $color;
 }
@@ -50,24 +51,24 @@
   line-height: 1.5rem;
 }
 
-@mixin theme($pimary-color, $rotate: 120deg, $darkenpct: 20%) {
-  $other-color: adjust-hue($pimary-color, $rotate);
-  $other2-color: adjust-hue($pimary-color, 180deg);
-  $secondary-color: adjust-hue($pimary-color, -$rotate);
+// @mixin theme($pimary-color, $rotate: 120deg, $darkenpct: 20%) {
+//   $other-color: adjust-hue($pimary-color, $rotate);
+//   $other2-color: adjust-hue($pimary-color, 180deg);
+//   $secondary-color: adjust-hue($pimary-color, -$rotate);
 
-  .btn-primary {
-    background-color: $pimary-color;
-  }
-  .btn-secondary {
-    background-color: $secondary-color;
-  }
-  .btn-other {
-    background-color: $other-color;
-  }
-  .btn-other2 {
-    background-color: $other2-color;
-  }
-}
+//   .btn-primary {
+//     background-color: $pimary-color;
+//   }
+//   .btn-secondary {
+//     background-color: $secondary-color;
+//   }
+//   .btn-other {
+//     background-color: $other-color;
+//   }
+//   .btn-other2 {
+//     background-color: $other2-color;
+//   }
+// }
 
 @mixin container($bg-color, $padding: 0) {
   width: 100%;

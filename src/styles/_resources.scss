@@ -35,6 +35,15 @@
     @include heading-3($pure-white);
   }
 
+  // &__section {
+  //   width: 66vw;
+  //   display: grid;
+  //   margin: auto;
+  //   grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
+  //   grid-template-rows: auto 1fr 1fr auto auto;
+  //   grid-gap: 1rem;
+  // }
+
   // &__main {
   //   @include container($off-white, 1rem);
   //   @include grid;
@@ -45,7 +54,6 @@
   &__topic-tags.container {
     display: flex;
     margin-top: 1rem;
-    padding-left: 1rem;
   }
   &__topic-tag {
     @include heading-4;
@@ -65,13 +73,12 @@
 
   &__heading {
     @include heading-3($off-black, $body-font);
-    margin: 0.25rem 0;
-    padding: 0 1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
   }
 
   &__description {
     @include body-text;
-    padding: 0 1rem;
   }
 }
 
@@ -83,7 +90,6 @@
   &__heading {
     @include body-text;
     margin: 1rem 0;
-    padding: 0 1rem;
     font-weight: 600;
   }
 }
