@@ -22,6 +22,88 @@
     z-index: 1;
   }
 
+  &__main {
+    background-color: $off-white;
+  }
+
+  &.container {
+    @include container($off-white);
+    display: flex;
+    flex-direction: column;
+    max-width: $grid-max-width;
+    padding: 6rem 1rem 4rem 1rem;
+    margin: auto;
+  }
+
+  &__heading {
+    @include hero-heading($off-black);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    max-width: 16rem;
+  }
+
+  &__section {
+    display: grid;
+    row-gap: 4rem;
+    column-gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(21rem, auto));
+
+    @media (min-width: $breakpoint-tablet) {
+      grid-template-areas:
+        'quote1 org1'
+        'book1 org1'
+        'book1 quote2'
+        'book1 book2'
+        'book3 book2'
+        'book3 book2'
+        'book3 .';
+    }
+
+    &__sub-heading {
+      @include heading-4;
+      margin-bottom: 0.5rem;
+    }
+
+    &__text {
+      @include body-text;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    #andreessen {
+      grid-area: quote1;
+    }
+
+    #effective-altruism {
+      grid-area: org1;
+    }
+
+    #animal-liberation {
+      grid-area: book1;
+    }
+
+    #harari {
+      grid-area: quote2;
+    }
+
+    #dalai-lama {
+      grid-area: book2;
+    }
+
+    #pollan {
+      grid-area: book3;
+    }
+  }
+
+  // &__section {
+  //   max-width: $grid-max-width;
+  //   display: grid;
+  //   margin: auto;
+  //   grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
+  //   grid-template-rows: auto 1fr 1fr auto auto;
+  //   grid-gap: 1rem;
+  // }
+
   // pre-set higher up cascade in _areas.scss
   &__intro-heading {
     @include hero-heading($pure-white);
@@ -69,6 +151,8 @@
   &__image {
     height: 16rem;
     width: 100%;
+    background-color: blue;
+    opacity: 0.4;
   }
 
   &__heading {
@@ -83,6 +167,9 @@
 }
 
 .resource--text {
+  &.container {
+    max-width: 20rem;
+  }
   &__quote {
     @include heading-3($off-black);
   }

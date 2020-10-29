@@ -78,11 +78,10 @@
 
 @mixin grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  max-width: 50rem;
-  margin: auto;
+  max-width: $grid-max-width;
 }
 
 // produce batch of top and bottom margins a

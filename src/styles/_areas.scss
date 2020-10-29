@@ -44,8 +44,7 @@
 }
 
 .area,
-.projects,
-.resources {
+.projects {
   &.container {
     @include container($off-white);
     padding: 6rem 1rem 4rem 1rem;
@@ -54,8 +53,7 @@
 
 .area-intro,
 .area-projects,
-.projects,
-.resources {
+.projects {
   &__section {
     @include grid;
     margin-bottom: 4rem;

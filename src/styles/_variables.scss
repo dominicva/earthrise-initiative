@@ -10,11 +10,13 @@ $body-font: 'Source Sans Pro', sans-serif;
 $heading-font: 'Roboto Mono', monospace;
 $link-font: $heading-font;
 
-// breakpoints
+// breakpoints and key widths
 $breakpoint-small: 35rem;
 $breakpoint-tablet: 48rem;
 $breakpoint-large: 60rem;
 $xl-screen: 75rem;
+
+$grid-max-width: 60rem;
 
 // base font sizes (mobile)
 $h1-font-size: 1.5rem;
