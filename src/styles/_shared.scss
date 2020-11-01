@@ -50,7 +50,7 @@ html {
     grid-area: toggle;
     text-align: right;
     text-transform: capitalize;
-    font-size: $link-font-size;
+    font-size: $h4-font-size;
   }
 
   &__menu-btn:hover {
@@ -92,6 +92,12 @@ html {
 }
 
 .footer {
+  &__container {
+    width: 100%;
+    background-color: $off-black;
+    padding: 2rem 0;
+  }
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-column-gap: 2rem;

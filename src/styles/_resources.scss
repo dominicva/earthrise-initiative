@@ -33,12 +33,27 @@
     max-width: $grid-max-width;
     padding: 6rem 1rem 4rem 1rem;
     margin: auto;
+
+    @media (min-width: $breakpoint-small) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__heading {
     @include hero-heading($off-black);
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     max-width: 16rem;
   }
 
