@@ -44,6 +44,12 @@ html {
   &__logo {
     @include logo($pure-white);
     grid-area: logo;
+    position: relative;
+    // top: 1rem;
+    // left: 1rem;
+    // transform: skewX(20deg);
+    // transform: rotateZ(90deg) translateX(8rem);
+    // transform-origin: left;
   }
 
   &__menu-btn {
