@@ -17,8 +17,17 @@ html {
 // }
 
 .main-header {
+  &.wrapper {
+    background-color: $off-black;
+    position: fixed;
+    width: 100%;
+  }
+
   &.container {
     @include container($off-black);
+    max-width: $xl-screen;
+    // position: relative;
+    margin: auto;
   }
 
   &__header {
@@ -26,7 +35,7 @@ html {
     max-width: $xl-screen;
     width: 100%;
     display: grid;
-    position: fixed;
+    // position: fixed;
     right: 0;
     left: 0;
     padding: 0.5rem 1rem;
