@@ -47,9 +47,12 @@
     @include hero-heading($pure-white);
     max-width: 32rem;
     margin-bottom: 4rem;
+    transform: translateY(-37vh);
+    // transition: transform 1s ease-in-out;
 
     @media (min-width: $breakpoint-small) {
       margin: 0 1rem 5rem 2rem;
+      transform: translateY(-47vh);
     }
 
     @media (min-width: $breakpoint-tablet) {
@@ -61,6 +64,7 @@
     @media (min-width: $breakpoint-large) {
       margin-right: 0;
       margin-bottom: 1rem;
+      transform: translateY(-60vh);
     }
   }
 

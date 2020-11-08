@@ -43,7 +43,6 @@ html {
   &.container {
     @include container(transparent);
     max-width: $xl-screen;
-    // position: relative;
     margin: auto;
   }
 
@@ -52,7 +51,6 @@ html {
     max-width: $xl-screen;
     width: 100%;
     display: grid;
-    // position: fixed;
     right: 0;
     left: 0;
     padding: 0.5rem 1rem;
