@@ -29,9 +29,6 @@ export const headerNavColorHandler = () => {
     .clientHeight;
   const scrollPosition = window.scrollY;
 
-  // console.log(scrollPosition);
-  // console.log(quoteContainerHeight);
-
   if (scrollPosition >= quoteContainerHeight) {
     headerNav.classList.add('light-bg');
   } else {
@@ -56,8 +53,3 @@ export const getScrollDirection = () => {
     headerNav.style.transform = 'translateY(0px)';
   }
 };
-
-// const headerNavScrollHandler = () => {
-//   const headerNav = document.querySelector('.main-header.wrapper');
-//   const scrollPosition = document.documentElement.scrollTop;
-// };

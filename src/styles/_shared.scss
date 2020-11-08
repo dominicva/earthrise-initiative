@@ -17,8 +17,8 @@ html {
   &.wrapper {
     position: fixed;
     width: 100%;
-    transition: background-color 0.33s ease-out, color 0.33s ease-out,
-      transform 0.33s ease-in;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out,
+      transform 0.25s ease-in;
     background-color: $off-black;
   }
 
