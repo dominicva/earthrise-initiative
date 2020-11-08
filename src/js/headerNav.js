@@ -21,3 +21,43 @@ export const headerNavToggleHandler = () => {
     isNavOpen = false;
   }
 };
+
+export const headerNavColorHandler = () => {
+  const headerNav = document.querySelector('.main-header.wrapper');
+
+  const quoteContainerHeight = document.querySelector('.quote.container')
+    .clientHeight;
+  const scrollPosition = window.scrollY;
+
+  // console.log(scrollPosition);
+  // console.log(quoteContainerHeight);
+
+  if (scrollPosition >= quoteContainerHeight) {
+    headerNav.classList.add('light-bg');
+  } else {
+    headerNav.classList.remove('light-bg');
+  }
+};
+
+export let lastScroll = 0;
+
+export const getScrollDirection = () => {
+  const headerNav = document.querySelector('.main-header.wrapper');
+
+  // let lastScroll = 0;
+  let currentScroll = document.documentElement.scrollTop;
+
+  if (currentScroll > 0 && lastScroll <= currentScroll) {
+    lastScroll = currentScroll;
+    headerNav.style.transform = 'translateY(-64px)';
+    console.log('scrolling down');
+  } else if (lastScroll > currentScroll) {
+    lastScroll = currentScroll;
+    headerNav.style.transform = 'translateY(0px)';
+  }
+};
+
+// const headerNavScrollHandler = () => {
+//   const headerNav = document.querySelector('.main-header.wrapper');
+//   const scrollPosition = document.documentElement.scrollTop;
+// };

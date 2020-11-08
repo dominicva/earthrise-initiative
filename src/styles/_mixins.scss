@@ -36,9 +36,13 @@
   color: $color;
 }
 
-@mixin logo($color) {
+@mixin logo($bg) {
+  @if $bg == $dark-bg {
+    color: $off-white;
+  } @else if $bg == $light-bg {
+    color: $off-black;
+  }
   font-family: $heading-font;
-  color: $color;
   font-size: $h4-font-size;
   text-transform: uppercase;
   letter-spacing: 1.5px;

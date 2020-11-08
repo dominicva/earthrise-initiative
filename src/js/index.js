@@ -1,4 +1,10 @@
-import { isNavOpen, headerNavToggleHandler } from './headerNav';
+import {
+  isNavOpen,
+  headerNavToggleHandler,
+  headerNavColorHandler,
+  getScrollDirection,
+  lastScroll,
+} from './headerNav';
 import {
   navItemHoverHandler,
   navItemExitHoverHandler,
@@ -15,6 +21,11 @@ import arrowWhite from '../media/arrow-white.svg';
 import rightArrowDark from '../media/right-arrow-dark.svg';
 
 import '../styles/app.scss';
+
+window.addEventListener('scroll', headerNavColorHandler);
+window.addEventListener('resize', headerNavColorHandler);
+
+window.addEventListener('scroll', getScrollDirection);
 
 const menuBtn = document.getElementById('main-header__menu-btn');
 menuBtn.addEventListener('click', headerNavToggleHandler);
@@ -34,6 +45,8 @@ exploreProjectsBtn.addEventListener('mouseout', exploreProjectsBtnHover);
 export {
   isNavOpen,
   headerNavToggleHandler,
+  headerNavColorHandler,
+  getScrollDirection,
   navItemHoverHandler,
   navItemExitHoverHandler,
   navItemClickHandler,

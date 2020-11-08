@@ -6,25 +6,42 @@ html {
   /* border: tomato solid 1px; */
 }
 
-// body {
-//   max-width: 80rem;
-//   margin: auto;
-// }
-
-// body > * {
-//   padding: 1rem;
-//   border-radius: 0.5rem;
-// }
-
 .main-header {
+  &__logo {
+    @include logo($dark-bg);
+    grid-area: logo;
+    position: relative;
+    width: fit-content;
+  }
+
   &.wrapper {
-    background-color: $off-black;
     position: fixed;
     width: 100%;
+    transition: background-color 0.33s ease-out, color 0.33s ease-out,
+      transform 0.33s ease-in;
+    background-color: $off-black;
+  }
+
+  &.dark-bg {
+    background-color: $off-black;
+    color: $off-white;
+  }
+
+  &.dark-bg .main-header__logo {
+    @include logo($dark-bg);
+  }
+
+  &.light-bg {
+    background-color: $off-white;
+    color: $off-black;
+  }
+
+  &.light-bg .main-header__logo {
+    @include logo($light-bg);
   }
 
   &.container {
-    @include container($off-black);
+    @include container(transparent);
     max-width: $xl-screen;
     // position: relative;
     margin: auto;
@@ -46,26 +63,14 @@ html {
       'logo toggle'
       'nav-items nav-items';
     align-items: center;
-    color: $pure-white;
-    background-color: $off-black;
-  }
-
-  &__logo {
-    @include logo($pure-white);
-    grid-area: logo;
-    position: relative;
-    // top: 1rem;
-    // left: 1rem;
-    // transform: skewX(20deg);
-    // transform: rotateZ(90deg) translateX(8rem);
-    // transform-origin: left;
   }
 
   &__menu-btn {
     grid-area: toggle;
-    text-align: right;
     text-transform: capitalize;
     font-size: $h4-font-size;
+    width: fit-content;
+    justify-self: end;
   }
 
   &__menu-btn:hover {
