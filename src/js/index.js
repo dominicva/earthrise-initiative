@@ -5,6 +5,9 @@ import {
   getScrollDirection,
   lastScroll,
 } from './headerNav';
+
+import { missionStatementAnimation } from '../js/animations/missionStatement';
+
 import {
   navItemHoverHandler,
   navItemExitHoverHandler,
@@ -27,6 +30,8 @@ window.addEventListener('resize', headerNavColorHandler);
 
 window.addEventListener('scroll', getScrollDirection);
 
+window.addEventListener('DOMContentLoaded', missionStatementAnimation);
+
 const menuBtn = document.getElementById('main-header__menu-btn');
 menuBtn.addEventListener('click', headerNavToggleHandler);
 
@@ -47,6 +52,7 @@ export {
   headerNavToggleHandler,
   headerNavColorHandler,
   getScrollDirection,
+  missionStatementAnimation,
   navItemHoverHandler,
   navItemExitHoverHandler,
   navItemClickHandler,
