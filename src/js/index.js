@@ -14,6 +14,8 @@ import {
   navItemClickHandler,
 } from './heroNav';
 
+import { areasPreviewSlideUpHandler } from './animations/areasPreview';
+
 import {
   exploreProjectsBtn,
   exploreProjectsBtnHover,
@@ -29,8 +31,11 @@ window.addEventListener('scroll', headerNavColorHandler);
 window.addEventListener('resize', headerNavColorHandler);
 
 window.addEventListener('scroll', getScrollDirection);
+window.addEventListener('scroll', areasPreviewSlideUpHandler);
 
-window.addEventListener('DOMContentLoaded', missionStatementAnimation);
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(missionStatementAnimation, 400);
+});
 
 const menuBtn = document.getElementById('main-header__menu-btn');
 menuBtn.addEventListener('click', headerNavToggleHandler);
@@ -56,6 +61,7 @@ export {
   navItemHoverHandler,
   navItemExitHoverHandler,
   navItemClickHandler,
+  areasPreviewSlideUpHandler,
   exploreProjectsBtn,
   exploreProjectsBtnHover,
 };

@@ -41,13 +41,11 @@ export let lastScroll = 0;
 export const getScrollDirection = () => {
   const headerNav = document.querySelector('.main-header.wrapper');
 
-  // let lastScroll = 0;
   let currentScroll = document.documentElement.scrollTop;
 
   if (currentScroll > 0 && lastScroll <= currentScroll) {
     lastScroll = currentScroll;
     headerNav.style.transform = 'translateY(-64px)';
-    console.log('scrolling down');
   } else if (lastScroll > currentScroll) {
     lastScroll = currentScroll;
     headerNav.style.transform = 'translateY(0px)';

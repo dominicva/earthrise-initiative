@@ -48,7 +48,6 @@
     max-width: 32rem;
     margin-bottom: 4rem;
     transform: translateY(-37vh);
-    // transition: transform 1s ease-in-out;
 
     @media (min-width: $breakpoint-small) {
       margin: 0 1rem 5rem 2rem;
@@ -121,11 +120,6 @@
   &__nav-arrow.active {
     opacity: 1;
   }
-
-  // @media (min-width: $breakpoint-large) {
-  //   height: 80vh;
-  //   background-position: 70% 0rem;
-  // }
 }
 
 .areas-preview {
@@ -134,7 +128,7 @@
   }
 
   &.container {
-    @include container($off-white);
+    @include container(transparent);
     max-width: $xl-screen;
     margin: auto;
   }
@@ -157,23 +151,17 @@
   &__sub-heading {
     @include heading-4;
     margin-bottom: 0.5rem;
+    transform: translateY(600px);
+    // animation: effects-system-up 0.4s ease-out 0.5s forwards;
   }
 
   &__main-heading {
     @include heading-2($off-black, $body-font, 0.7px);
     margin-bottom: 3rem;
+    transform: translateY(600px);
+    // animation: effects-system-up 0.4s ease-out 1.25s forwards;
   }
 }
-
-// #areas-preview > * {
-//   max-width: 35rem;
-//   margin: auto;
-
-//   @media (min-width: $breakpoint-large) {
-//     max-width: 42rem;
-//     margin: 0;
-//   }
-// }
 
 #areas-question {
   margin-top: 0.5rem;
@@ -191,6 +179,8 @@
     align-items: center;
     width: fit-content;
     cursor: pointer;
+    transform: translateY(600px);
+    // animation: effects-system-up 0.4s ease-out 1.75s forwards;
   }
 
   &__arrow {

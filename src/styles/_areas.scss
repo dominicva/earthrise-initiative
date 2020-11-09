@@ -94,6 +94,7 @@
 .project {
   &.container {
     @include container($pure-white, 0 0 1rem 0);
+    transform: translateX(100rem);
   }
 
   &__image {

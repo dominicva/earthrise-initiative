@@ -1,13 +1,19 @@
 export const missionStatementAnimation = async () => {
   const missionStatement = document.querySelector('.hero__mission-statement');
   let i = 0;
-  const text = 'global shift towards equality of consideration for all';
-  const speed = 34;
+  const text =
+    'We act to accelerate the global shift towards equality of consideration for all';
+  let speed = 20;
 
   async function typingEffect() {
     if (i < text.length) {
       missionStatement.textContent += text.charAt(i);
       i++;
+      if (i % 13 === 0) {
+        speed = 100;
+      } else {
+        speed = 20;
+      }
       setTimeout(typingEffect, speed);
     }
   }
@@ -17,6 +23,6 @@ export const missionStatementAnimation = async () => {
     missionStatement.style.transition = transition;
   }
 
-  const delay = 2600;
+  const delay = 3000;
   await typingEffect().then(setTimeout(transform, delay));
 };

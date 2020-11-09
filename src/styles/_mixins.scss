@@ -55,6 +55,33 @@
   line-height: 1.5rem;
 }
 
+@mixin container($bg-color, $padding: 0) {
+  width: 100%;
+  background-color: $bg-color;
+  padding: $padding;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  max-width: $grid-max-width;
+}
+
+// animations
+@keyframes effects-system-up {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 // @mixin theme($pimary-color, $rotate: 120deg, $darkenpct: 20%) {
 //   $other-color: adjust-hue($pimary-color, $rotate);
 //   $other2-color: adjust-hue($pimary-color, 180deg);
@@ -71,31 +98,5 @@
 //   }
 //   .btn-other2 {
 //     background-color: $other2-color;
-//   }
-// }
-
-@mixin container($bg-color, $padding: 0) {
-  width: 100%;
-  background-color: $bg-color;
-  padding: $padding;
-}
-
-@mixin grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  max-width: $grid-max-width;
-}
-
-// produce batch of top and bottom margins a
-// as multiples of 8px
-// @for $i from 1 through 5 {
-//   $size: $i * 8;
-//   .m-t-#{$size} {
-//     margin-top: #{$size}px;
-//   }
-//   .m-b-#{$size} {
-//     margin-bottom: #{$size}px;
 //   }
 // }
