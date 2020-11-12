@@ -3,16 +3,16 @@ export const missionStatementAnimation = async () => {
   let i = 0;
   const text =
     'We act to accelerate the global shift towards equality of consideration for all';
-  let speed = 20;
+  let speed = 30;
 
   async function typingEffect() {
     if (i < text.length) {
       missionStatement.textContent += text.charAt(i);
       i++;
       if (i % 13 === 0) {
-        speed = 100;
+        speed = 70;
       } else {
-        speed = 20;
+        speed = 30;
       }
       setTimeout(typingEffect, speed);
     }
@@ -23,6 +23,6 @@ export const missionStatementAnimation = async () => {
     missionStatement.style.transition = transition;
   }
 
-  const delay = 3000;
+  const delay = 4000;
   await typingEffect().then(setTimeout(transform, delay));
 };

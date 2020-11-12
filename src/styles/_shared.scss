@@ -20,6 +20,7 @@ html {
     transition: background-color 0.25s ease-out, color 0.25s ease-out,
       transform 0.25s ease-in;
     background-color: $off-black;
+    z-index: 2;
   }
 
   &.dark-bg {
@@ -47,14 +48,14 @@ html {
   }
 
   &__header {
-    z-index: 2;
+    // z-index: 2;
     max-width: $xl-screen;
     width: 100%;
     display: grid;
     right: 0;
     left: 0;
     padding: 0.5rem 1rem;
-    margin: auto;
+    // margin: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3rem;
     grid-template-areas:
@@ -132,7 +133,7 @@ html {
   }
 
   &__logo {
-    @include logo($pure-white);
+    @include logo($dark-bg);
     margin-bottom: 0.5rem;
   }
 
